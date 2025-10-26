@@ -1,0 +1,158 @@
+/* Target class tokens that contain special characters using attribute selectors.
+         This matches the literal class tokens like `bg-[#659f8f]` and `dark:bg[#313131]`.
+         The dark variant rule applies when a parent has the `.dark` class. */
+[class~="bg-[#659f8f]"] {
+  background-color: #659f8f;
+}
+
+/* When a parent element has the `dark` class, apply the dark background. */
+.dark [class~="dark:bg-[#313131]"] {
+  background-color: #313131;
+}
+footer {
+  color: black;
+  font-family: Arial, sans-serif;
+  display: block;
+  text-align: left;
+  size-adjust: calc(50%);
+}
+#footer-logo img {
+  display: inline-flex;
+  width: 200px;
+  height: auto;
+  display: table-row;
+  margin: 0 auto;
+  flex-direction: column;
+  margin-right: 800px;
+  padding-top: 1px;
+  padding-bottom: 20px;
+}
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  direction: row;
+  flex-grow: 1;
+}
+/* divider */
+hr {
+  border: none;
+  border-top: 1px solid rgb(255, 69, 0);
+  margin: 20px 0;
+}
+
+footer h1 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  color: black;
+  font-size: 17px;
+  line-height: 1.5;
+}
+footer h2 {
+  margin-top: 50px;
+  margin-left: 200px;
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  line-height: 1.5;
+}
+footer input[type="text"] {
+  padding: 0.5rem;
+  border: 0.25px solid #ccc;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+footer button {
+  background-color: rgb(241, 137, 9);
+  color: black;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+footer ul {
+  list-style: none;
+  margin-left: 160px;
+}
+footer ul li {
+  margin-bottom: 0.5rem;
+  color: black;
+  line-height: 1.1;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  margin-right: 20px;
+}
+footer ::content {
+  color: black;
+  font-size: 12px;
+  text-align: right;
+  font-weight: normal;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  font-size: 10px;
+  text-align: end;
+}
+footer input[type="text"]::placeholder {
+  font-size: 11px;
+  color: black;
+  font-weight: normal;
+}
+bo {
+  border-top: 1px solid #ccc;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 501px) {
+  footer {
+    padding: 2rem;
+    max-width: 1800px;
+    margin: 0 auto;
+    margin-right: 20px;
+  }
+}
+@media and (min-width: 601px) {
+  .footer button {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+@media all and (min-width: 601px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media (min-width: 601px) {
+  .footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 601px) {
+  .footer ul {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 601px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}

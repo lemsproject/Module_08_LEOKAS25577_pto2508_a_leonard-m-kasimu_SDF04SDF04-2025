@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Footer</title>
-</head>
-<body>
+  </head>
+  <body>
     <footer class="bg-[#659f8f] dark:bg-[#313131]">
-        <div class="container px-6 py-12 mx-auto">
-            <div class="flex">
-                <a href="#">
-                    <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="CodeSpace Logo">
-                </a>
-            </div>
+      <div class="container px-6 py-12 mx-auto">
+        <div class="footer-content">
+          <h1>subscribe to our newsletter for updates</h1>
+          <input type="text" placeholder="Email Address" />
+          <button>Subscribe</button>
         </div>
+        <div class="footer-content1">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Our Philosophy</a></li>
+          </ul>
+        </div>
+        <div class="footer-content1">
+          <h2>Technologies</h2>
+          <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+          </ul>
+        </div>
+        <!-- Border line in design but is ignored by screen readers -->
+
+        <hr aria-hidden="true" />
+
+        <div class="bo"></div>
+
+        <!-- Footer Logo Section -->
+        <div id="footer-logo">
+          <a
+            href="https://codespace.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              class="w-auto h-7"
+              src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg"
+              alt="CodeSpace Logo"
+            />
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
