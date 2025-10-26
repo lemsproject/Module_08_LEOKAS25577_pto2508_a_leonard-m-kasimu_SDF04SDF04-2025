@@ -148,6 +148,7 @@ bo {
     align-items: center;
     margin-left: 0;
     margin-right: 0;
+    color: black;
   }
 }
 @media (max-width: 601px) {
